@@ -2212,6 +2212,7 @@ command_update() {
 	echo -n "Checking if any files need to be updated..."
 	download_file "bash_completion/msm"
 	download_file "versioning/versions.txt"
+	echo >> "${output_dir}/versioning/versions.txt"
 
 	# Downloads all versioning files in the latest MSM version
 	download_upstream_versions() {
